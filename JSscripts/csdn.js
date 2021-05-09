@@ -19,6 +19,8 @@ fetch("https://blog.csdn.net/community/home-api/v1/get-business-list?page=1&size
             }
             fetch("https://blog.csdn.net/fanqiliang630/article/details/" + res[i]);
             i += 1;
-        }, 400)
+        }, 500)
     })
-    .catch(error => console.log('error', error));
+    .catch(error => {
+        console.log('error', error)
+    });
