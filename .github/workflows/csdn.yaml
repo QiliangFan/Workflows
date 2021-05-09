@@ -23,5 +23,6 @@ jobs:
       - name: run script
         run: |
           cd JSscripts
+          pwd
           npm install
           node csdn.js
