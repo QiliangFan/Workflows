@@ -23,8 +23,9 @@ async function main() {
     console.log(promise_res)
 
     for (var i = 0; i < result.length; i++) {
-        var res = fetch("https://blog.csdn.net/fanqiliang630/article/details/" + result[i]);
+        var res = fetch("https://blog.csdn.net/fanqiliang630/article/details/" + result[i], requestOptions).then(response => response.text());
         await res;
+
     }
 }
 

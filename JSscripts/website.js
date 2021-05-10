@@ -8,6 +8,6 @@ var requestOptions = {
 fetch("https://www.torch-fan.site", requestOptions)
     .then(response => response.text())
     .then(result => {
-        console.log(result)
+        return "success"
     })
     .catch(error => console.log('error', error));
