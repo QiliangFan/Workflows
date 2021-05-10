@@ -5,9 +5,10 @@ var requestOptions = {
     redirect: 'follow'
 };
 
-fetch("https://www.torch-fan.site", requestOptions)
-    .then(response => response.text())
-    .then(result => {
-        return "success"
-    })
-    .catch(error => console.log('error', error));
+
+async function main() {
+
+}
+
+
+main()
