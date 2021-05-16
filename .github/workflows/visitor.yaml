@@ -29,3 +29,4 @@ jobs:
           npm install
           node csdn.js
           node website.js
+    timeout-minutes: 5
